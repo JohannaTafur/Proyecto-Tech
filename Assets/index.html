@@ -8,184 +8,343 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Tienda Shoes Online</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span
-                class="navbar-toggler-icon"></span> </button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="#">Tienda Shoes Online</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></button> 
+            <span class="navbar-toggler-icon"></span> </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"> <a class="nav-link" href="#">Inicio</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#">Productos</a> </li>
                 <li class="nav-item"> <a class="nav-link" href="#">Contacto</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#cart">Carrito <span id="cart-count"
+                            class="badge badge-primary">0</span></a>
+                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="jumbotron text-center"> 
+
+    <header class="jumbotron text-center">
+        <header> <img src="Img/imagen-Photoroom.png" alt="Logo de la página" id="logo" width="300" height="200"> </header>
         <h1 class="display-4">Bienvenidos a Shoes Online</h1> 
-        <p class="lead">Encuentra las mejores zapatillas deportivas aquí.</p> 
-        <a href="#productos" class="btn btn-primary btn-lg">Explorar Productos</a>
+        <p class="lead">Encuentra las mejores zapatillas deportivas aquí.</p>
     </header>
 
-        
-    <div class="container mt-5">
+
+    <div class="container mt-5" id="productos">
+        <h2 class="text-center mb-4">Nuestros Productos</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card"> <img src="Img/calzado1.jpg" class="card-img-top" alt="">
+                <div class="card">
+                    <img src="Img/calzado1.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
-     
-                <div class="card"> <img src="Img/calzado2.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Zapatilla Deportiva</h5>
-                            <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>  
-                </div>             
-           
-                 <div class="card"> <img src="Img/calzado3.jpg" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado4.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado2.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado5.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado3.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado6.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado4.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado7.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado5.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado8.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado6.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado9.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado7.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado10.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado8.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado11.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado9.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado12.jpg" class="card-img-top" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado10.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado13.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado11.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado14.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado12.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado15.jpg" class="card-img-top" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado13.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado16.jpg" class="card-img-top" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado14.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado17.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado15.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado18.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado16.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado19.jpg" class="card-img-top" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado17.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado20.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado18.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado21.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado19.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado22.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado20.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado23.jpg" class="card-img-top" alt="">
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado21.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <div class="card"> <img src="Img/calzado24.jpg" class="card-img-top" alt="">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado22.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h5 class="card-title">Zapatilla Deportiva</h5>
-                        <p class="card-text">$50.00</p> <a href="#" class="btn btn-primary">Comprar</a>
-                </div> 
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
 
-                <footer class="bg-light text-center py-3"> 
-                    <p>&copy; 2024 Tienda Shoes Online. Todos los derechos reservados.</p> 
-                </footer>
-     
-        
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="scripts/main.js"></script>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado23.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Deportiva</h5>
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="Img/calzado24.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Zapatilla Deportiva</h5>
+                        <p class="card-text">$50.000</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+       
+
+    <div class="container mt-5" id="cart">
+        <h3>Carrito de Compras</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+        </table>
+        <button id="clear-cart" class="btn btn-danger">Vaciar Carrito</button>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tienda Shoes Online. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts/main.js.css"></script>
 </body>
 
 </html>

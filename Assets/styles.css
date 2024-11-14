@@ -1,11 +1,59 @@
 body {
     font-family: Arial, sans-serif;
+   
+
 }
+
 .navbar-brand {
     font-weight: bold;
+    color: bisque;
+    
 }
+
+
+.jumbotron {
+    height: 50vh; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 0; 
+   
+}
+
+
 .card {
-    margin-bottom: 20px;
-   
-   
+    margin-bottom: 20px; 
+    transition: transform 0.2s;
+    height: 300px;
+    border: 1px solid #16547b;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    
 }
+
+.card:hover {
+     transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    display: fixed;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 20px;
+}
+
+.card-body { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+footer {
+    background-color: #71ccf0;
+}
+
+footer p {
+    margin: auto;
+    
+}
+
